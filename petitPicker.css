@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+
+.ptFont { font-family: Verdana; font-size: 12px; width: 60px; }
+.ptCtr { border: 1px solid #d8d8d8; }
+.ptCell { width: 75px; height: 20px; display: none; }​

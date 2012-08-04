@@ -1,0 +1,13 @@
+// This is a very simple and minimalist javascript color picker plugin built on top of jquery.
+
+// Usage:
+
+$('#divPetitPicker').petitPicker(setPetitColor);
+
+// where setPetitColor is your callback (example below)
+
+function setPetitColor(data, colors) {
+   var col = colors[data];
+   $('#divPetitPicker').css('background-color', col);
+   currentColor = col;
+} 

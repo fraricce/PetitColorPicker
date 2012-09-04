@@ -22,7 +22,7 @@
       
       var anchor = $(this).find('#btnToggle');
       var fatherId = $(this).attr('id');
-      anchor.live('click', function() { $('#' + fatherId + ' .ptCell').toggle('fast'); })     
+      anchor.live('click', function() { $('#' + fatherId + ' .ptCell').toggle('fast'); });
       
       var id;
       

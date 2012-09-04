@@ -3,7 +3,6 @@
  * a minimalist color picker
  * MIT Licensed 
  * Francesco Ricceri (fraricce@gmail.com)
- *
  */
 
 (function( $ ) {
@@ -28,13 +27,13 @@
       var id;
       
       for (var i in colors) {
-        id = i;                
+        id = i + fatherId;
         $(this).append("<div class='ptCell ptFont ptCtr ' id='" + id + "'  style='background-color: " + colors[i] + "'>" + i +  "</div>");
-          
+
         (function(i){
           $('#' + id).click(function() {
-            callBack(i, colors);
             $(' .ptCell').hide();
+            callBack(i, colors);
           });
           
         })(i);      
